@@ -38,4 +38,4 @@ build/
 .DS_Store
 
 # applicationContext.xml
-!src/main/webapp/WEB-INF/applicationContext.xml
+src/main/webapp/WEB-INF/applicationContext.xml
