@@ -1,0 +1,239 @@
+.buttonGroup {
+    display: flex;
+    gap: 1rem;
+}
+
+.checkedCell {
+    background-color: rgb(255, 174, 174) !important;
+    font-weight: bold ;
+}
+
+.controlWrapper {
+    align-items: center;
+    background-color: #ffffff ;
+    border: 1px solid #d6d6d6 ;
+    flex: 1 ;
+    padding: 0.3rem ;
+    position: relative ;
+    width: 100% ;
+}
+
+.deleteButton {
+    background-color: #c51818;
+    border: none ;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem ;
+    font-weight: 600;
+    height: 2rem ;
+    transition: background-color 0.3s ;
+    width: 5rem ;
+}
+
+.deleteButton:hover {
+    background-color: white;
+    color: #841818;
+}
+
+.fieldset {
+    border: 1px solid #cacaca ;
+    border-bottom-left-radius: 0.5rem ;
+    border-bottom-right-radius: 0.5rem ;
+    margin-bottom: 1.5rem ;
+    padding: 0.8rem ;
+}
+
+.formControl {
+    background-color: #ffffff ;
+    border: 1px solid #dddddd ;
+    border-radius: 0 ;
+    box-sizing: border-box ;
+    height: 2.0rem ;
+    margin: 0 ;
+    padding: 0.5rem ;
+    resize: none ;
+}
+
+.formHeader {
+    border-top-left-radius: 0.5rem ;
+    border-top-right-radius: 0.5rem ;
+    color: #ffffff ;
+    display: flex ;
+    font-size: 1.8rem ;
+    font-weight: 700 ;
+    justify-content: space-between;
+    margin-bottom: 0 ;
+    margin-top: 1rem ;
+    padding: 0.7rem ;
+    text-align: left ;
+}
+
+.formHeader.first {
+    background-color: #4987e6;
+    margin-top: 0 ;
+}
+
+.formHeader.second {
+    background-color: #007b91;
+}
+
+.formHeader.symptoms {
+    background-color: #df6172;
+}
+
+.formHeader.third {
+    background-color: #005679;
+}
+
+.formHeaderButton {
+    align-items: center;
+    background-color: #ffffff ;
+    border: 1px solid #dddddd ;
+    border-radius: 5px;
+    color: rgb(7, 148, 89);
+    font-size: 1.3rem;
+    height: 2.1rem;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.formLabel {
+    background-color: #e9e9e9 ;
+    border: 1px solid #afafaf ;
+    font-weight: 600 ;
+    margin: 0 ;
+    padding: 0.55rem ;
+    text-align: center ;
+    white-space: nowrap ;
+}
+
+.formSelect {
+    background-color: #ffffff ;
+    border-radius: 0 ;
+    height: 2.0rem ;
+}
+
+.formWrapper {
+    background-color: white ;
+    border-bottom-left-radius: 0.5rem ;
+    border-bottom-right-radius: 0.5rem ;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) ;
+    padding: 2rem ;
+    padding-bottom: 0.5rem ;
+}
+
+.inlineFormGroup {
+    align-items: stretch;
+    display: flex ;
+}
+
+.inlineFormGroup.other {
+    padding-right: 0.5rem ;
+}
+
+.inlineFormGroup.symptoms {
+    align-items: flex-start ;
+    gap: 2rem ;
+    height: auto ;
+    white-space: nowrap ;
+}
+
+.inputGroup {
+    margin-bottom: 0rem ;
+}
+
+.invalidFeedback {
+    color: red ;
+    display: block ;
+    font-size: 0.75rem ;
+    margin-top: 0.2rem ;
+}
+
+.legend {
+    font-weight: bold ;
+    padding: 0 0.5rem ;
+    width: auto ;
+}
+
+.radioButtons {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.radioGroup {
+    align-items: center;
+    border: 1px solid #d6d6d6 ;
+    display: flex;
+    flex-direction: column ;
+    padding: 0.48rem ;
+    padding-bottom: 0;
+    white-space: nowrap ;
+    width: 100%;
+}
+
+.radioInput {
+    margin-left: 0.5rem;
+}
+
+.saveButton {
+    background-color: #006b00;
+    border: none ;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem ;
+    font-weight: 600;
+    height: 2rem ;
+    transition: background-color 0.3s ;
+    width: 5rem ;
+}
+
+.saveButton:hover {
+    background-color: white;
+    color: #005f00;
+}
+
+.submitButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight:bolder;
+    background-color: rgb(69, 166, 235);
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(69, 166, 235);
+}
+
+
+.symptomTable td {
+    background-color: white;
+    border: 1px solid #cacaca;
+    height: 3rem ;
+    margin: 0 ;
+    padding: 0 ;
+    padding-left: 1rem ;
+    width: 10rem ;
+}
+
+table {
+    border-collapse: collapse ;
+    border-spacing: 0 ;
+    margin: 0 ;
+    padding: 0 ;
+    width: 100% ;
+}
+
+td {
+    padding: 0 ;
+}
