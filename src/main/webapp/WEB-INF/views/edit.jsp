@@ -169,27 +169,27 @@
                                 <tbody>
                                 <tr>
                                     <td><form:checkbox path="fever" class="symptom-checkbox"/> 발열</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 오한</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 두통</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 인후통</td>
+                                    <td><form:checkbox path="chill" class="symptom-checkbox"/> 오한</td>
+                                    <td><form:checkbox path="headache" class="symptom-checkbox"/> 두통</td>
+                                    <td><form:checkbox path="sore_throat" class="symptom-checkbox"/> 인후통</td>
                                 </tr>
                                 <tr>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 콧물</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 기침</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 호흡곤란</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 복통/설사</td>
+                                    <td><form:checkbox path="runny_nose" class="symptom-checkbox"/> 콧물</td>
+                                    <td><form:checkbox path="cough" class="symptom-checkbox"/> 기침</td>
+                                    <td><form:checkbox path="short_breath" class="symptom-checkbox"/> 호흡곤란</td>
+                                    <td><form:checkbox path="colic_diarrhea" class="symptom-checkbox"/> 복통/설사</td>
                                 </tr>
                                 <tr>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 구토</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 발진</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 황달</td>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 의식 저하</td>
+                                    <td><form:checkbox path="vomit" class="symptom-checkbox"/> 구토</td>
+                                    <td><form:checkbox path="rash" class="symptom-checkbox"/> 발진</td>
+                                    <td><form:checkbox path="jaundice" class="symptom-checkbox"/> 황달</td>
+                                    <td><form:checkbox path="loss_consciousness" class="symptom-checkbox"/> 의식 저하</td>
                                 </tr>
                                 <tr>
-                                    <td><form:checkbox path="symptom" class="symptom-checkbox"/> 점막 지속 출혈</td>
+                                    <td><form:checkbox path="bloody_mucus" class="symptom-checkbox"/> 점막 지속 출혈</td>
                                     <td colspan="3">
                                         <form:checkbox path="other" class="symptom-checkbox"/> 기타
-                                        <form:input path="otherDetail" cssClass="formControl"/>
+                                        <form:input path="other_detail" cssClass="formControl"/>
                                     </td>
                                 </tr>
                                 </tbody>

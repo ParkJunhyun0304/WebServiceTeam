@@ -204,7 +204,7 @@
                                         <input type="checkbox" class="symptom-checkbox" name="fever"> 발열
                                     </td>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="chills" > 오한
+                                        <input type="checkbox" class="symptom-checkbox" name="chill" > 오한
                                     </td>
                                     <td class="">
                                         <input type="checkbox" class="symptom-checkbox" name="headache" > 두통
@@ -247,7 +247,7 @@
                                     </td>
                                     <td colspan="3" class="">
                                         <input type="checkbox" class="symptom-checkbox" name="other"> 기타
-                                        <input type="text" name="otherDetail" class="formControl" value="">
+                                        <input type="text" name="other_detail" class="formControl" value="">
                                     </td>
                                 </tr>
                                 </tbody>
@@ -264,17 +264,17 @@
                                 <tbody>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="take_medicine" value="true"> 증상 관련 약 복용
+                                        <input type="checkbox" class="symptom-checkbox" name="take_medicine"> 증상 관련 약 복용
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="visit_hospital" value="true"> 현지 병원 방문
+                                        <input type="checkbox" class="symptom-checkbox" name="visit_hospital"> 현지 병원 방문
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="animal_contact" value="true"> 동물 접촉
+                                        <input type="checkbox" class="symptom-checkbox" name="animal_contact"> 동물 접촉
                                     </td>
                                 </tr>
                                 </tbody>

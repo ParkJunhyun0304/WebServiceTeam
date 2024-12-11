@@ -157,27 +157,27 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td><input type="checkbox" value="발열" disabled <c:if test="${fn:contains(existingData.symptom, '발열')}">checked</c:if>> 발열</td>
-                                <td><input type="checkbox" value="오한" disabled <c:if test="${fn:contains(existingData.symptom, '오한')}">checked</c:if>> 오한</td>
-                                <td><input type="checkbox" value="두통" disabled <c:if test="${fn:contains(existingData.symptom, '두통')}">checked</c:if>> 두통</td>
-                                <td><input type="checkbox" value="인후통" disabled <c:if test="${fn:contains(existingData.symptom, '인후통')}">checked</c:if>> 인후통</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '발열')}">checked</c:if>> 발열</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '오한')}">checked</c:if>> 오한</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '두통')}">checked</c:if>> 두통</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '인후통')}">checked</c:if>> 인후통</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" value="콧물" disabled <c:if test="${fn:contains(existingData.symptom, '콧물')}">checked</c:if>> 콧물</td>
-                                <td><input type="checkbox" value="기침" disabled <c:if test="${fn:contains(existingData.symptom, '기침')}">checked</c:if>> 기침</td>
-                                <td><input type="checkbox" value="호흡곤란" disabled <c:if test="${fn:contains(existingData.symptom, '호흡곤란')}">checked</c:if>> 호흡곤란</td>
-                                <td><input type="checkbox" value="복통/설사" disabled <c:if test="${fn:contains(existingData.symptom, '복통/설사')}">checked</c:if>> 복통/설사</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '콧물')}">checked</c:if>> 콧물</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '기침')}">checked</c:if>> 기침</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '호흡곤란')}">checked</c:if>> 호흡곤란</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '복통/설사')}">checked</c:if>> 복통/설사</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" value="구토" disabled <c:if test="${fn:contains(existingData.symptom, '구토')}">checked</c:if>> 구토</td>
-                                <td><input type="checkbox" value="발진" disabled <c:if test="${fn:contains(existingData.symptom, '발진')}">checked</c:if>> 발진</td>
-                                <td><input type="checkbox" value="황달" disabled <c:if test="${fn:contains(existingData.symptom, '황달')}">checked</c:if>> 황달</td>
-                                <td><input type="checkbox" value="의식 저하" disabled <c:if test="${fn:contains(existingData.symptom, '의식 저하')}">checked</c:if>> 의식 저하</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '구토')}">checked</c:if>> 구토</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '발진')}">checked</c:if>> 발진</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '황달')}">checked</c:if>> 황달</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '의식 저하')}">checked</c:if>> 의식 저하</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" value="점막 지속 출혈" disabled <c:if test="${fn:contains(existingData.symptom, '점막 지속 출혈')}">checked</c:if>> 점막 지속 출혈</td>
+                                <td><input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '점막 지속 출혈')}">checked</c:if>> 점막 지속 출혈</td>
                                 <td colspan="3">
-                                    <input type="checkbox" value="기타" disabled <c:if test="${fn:contains(existingData.symptom, '기타')}">checked</c:if>> 기타
+                                    <input type="checkbox" disabled <c:if test="${fn:contains(existingData.symptom, '기타')}">checked</c:if>> 기타
                                     <input type="text" class="formControl" value="${existingData.otherDetail}" disabled/>
                                 </td>
                             </tr>
