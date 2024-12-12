@@ -1,20 +1,14 @@
-package com.project.quarantine.controller;
+package com.project.quarantine.quarantine.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
 public class QuarantineController {
-
-    @RequestMapping("/")
-    public String home(Model model) {
-        return "index";
-    }
 
     @RequestMapping("/add")
     public String add(Model model) {

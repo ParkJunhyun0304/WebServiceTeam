@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="com.project.quarantine.quarantine.vo.QuarantineVO" alias="quarantine"/>
+        <typeAlias type="com.project.quarantine.user.vo.UserVO" alias="user"/>
+        <typeAlias type="com.project.quarantine.symptom.vo.SymptomVO" alias="symptom"/>
+        <package name="com.project.quarantine"/>
+    </typeAliases>
+</configuration>
