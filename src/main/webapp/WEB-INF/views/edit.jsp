@@ -74,8 +74,8 @@
                             <div class="inlineFormGroup">
                                 <label class="formLabel">생년월일</label>
                                 <div class="controlWrapper">
-                                    <form:input path="birthdate" cssClass="formControl" type="date"/>
-                                    <form:errors path="birthdate" cssClass="invalidFeedback"/>
+                                    <form:input path="birthDate" cssClass="formControl" type="date"/>
+                                    <form:errors path="birthDate" cssClass="invalidFeedback"/>
                                 </div>
                             </div>
                         </td>
@@ -247,9 +247,15 @@
         const isHealthyCheckbox = document.getElementById("isHealthy");
 
         symptomCheckboxes.forEach((checkbox) => {
+            checkbox.value = "0";
+
             checkbox.addEventListener("change", function () {
                 if (this.checked) {
+                    this.value = "1";
                     isHealthyCheckbox.checked = false;
+                    isHealthyCheckbox.value = "1";
+                } else {
+                    this.value = "0";
                 }
                 checkAll();
                 updateStyle(checkbox);
@@ -260,18 +266,9 @@
             const allUnchecked = Array.from(symptomCheckboxes).every((checkbox) => !checkbox.checked);
             if (allUnchecked) {
                 isHealthyCheckbox.checked = true;
+                isHealthyCheckbox.value = "0"
             }
         }
-
-
-        symptomCheckboxes.forEach((checkbox) => {
-            checkbox.addEventListener("change", function () {
-                if (this.checked) {
-                    isHealthyCheckbox.checked = false;
-                }
-                updateStyle(checkbox);
-            });
-        });
 
         function updateStyle(checkbox) {
             if (checkbox.checked) {

@@ -767,7 +767,7 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <Charset>utf8mb4</Charset>
     </collation>
     <schema id="236" parent="1" name="OSS24_22100304">
-      <LastIntrospectionLocalTimestamp>2024-12-12.07:15:21</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-12-14.13:01:20</LastIntrospectionLocalTimestamp>
       <CollationName>utf8_general_ci</CollationName>
     </schema>
     <schema id="237" parent="1" name="information_schema">
@@ -977,7 +977,7 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="281" parent="242" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1002,7 +1002,7 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="286" parent="242" name="birthdate">
+    <column id="286" parent="242" name="birthDate">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
@@ -1033,7 +1033,7 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <Position>11</Position>
     </column>
     <column id="292" parent="242" name="isHealthy">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>12</Position>
     </column>
@@ -1057,7 +1057,7 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <Position>16</Position>
     </column>
     <column id="297" parent="242" name="approved">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>17</Position>
     </column>
@@ -1081,73 +1081,73 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="302" parent="243" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="303" parent="243" name="fever">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="304" parent="243" name="chill">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>3</Position>
     </column>
     <column id="305" parent="243" name="headache">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="306" parent="243" name="soreThroat">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>5</Position>
     </column>
     <column id="307" parent="243" name="runnyNose">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>6</Position>
     </column>
     <column id="308" parent="243" name="cough">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>7</Position>
     </column>
     <column id="309" parent="243" name="shortBreath">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>8</Position>
     </column>
     <column id="310" parent="243" name="colicDiarrhea">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>9</Position>
     </column>
     <column id="311" parent="243" name="vomit">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>10</Position>
     </column>
     <column id="312" parent="243" name="rash">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>11</Position>
     </column>
     <column id="313" parent="243" name="jaundice">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>12</Position>
     </column>
     <column id="314" parent="243" name="lossConsciousness">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>13</Position>
     </column>
     <column id="315" parent="243" name="bloodyMucus">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>14</Position>
     </column>
     <column id="316" parent="243" name="takeMedicine">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>15</Position>
     </column>
     <column id="317" parent="243" name="animalContact">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>16</Position>
     </column>
     <column id="318" parent="243" name="visitHospital">
-      <DasType>tinyint(1)|0s</DasType>
+      <DasType>int(11)|0s</DasType>
       <Position>17</Position>
     </column>
     <index id="319" parent="243" name="PRIMARY">
@@ -1161,12 +1161,12 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="321" parent="244" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="322" parent="244" name="username">
+    <column id="322" parent="244" name="userName">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
@@ -1181,7 +1181,7 @@ OSS24_22100304|schema||OSS24_22100304||UPDATE|G</Grants>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="325" parent="244" name="birthdate">
+    <column id="325" parent="244" name="birthDate">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>

@@ -4,6 +4,28 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Quarantine">
     <select id="selectList" resultType="quarantine">
-        select * from quarantine
+        SELECT * FROM quarantine
+    </select>
+    <insert id="insertList">
+        INSERT INTO quarantine (name, passportId, birthDate, nationality, gender, flightCode, flightSeat, contact, visitCountry, isHealthy, symptomsId, note, originalFileName, uuidFileName, approved, departure)
+        VALUES(
+        #{name}, #{passportId}, #{birthDate},#{nationality},#{gender},#{flightCode},#{flightSeat},#{contact},#{visitCountry},#{isHealthy},#{symptomsId},#{note},#{originalFileName},#{uuidFileName},#{approved},#{departure}
+        );
+    </insert>
+    <select id="filterQuarantine" parameterType="map" resultType="quarantine">
+        SELECT * FROM quarantine
+        WHERE 1=1
+        <if test="nameSearch != null and nameSearch != ''">
+            AND name LIKE CONCAT('%', #{nameSearch}, '%')
+        </if>
+        <if test="codeSearch != null and codeSearch != ''">
+            AND flightCode LIKE CONCAT('%', #{codeSearch}, '%')
+        </if>
+        <if test="depSearch != null and depSearch != ''">
+            AND departure LIKE CONCAT('%', #{depSearch}, '%')
+        </if>
+    </select>
+    <select id="selectOne" resultType="quarantine">
+        SELECT * FROM quarantine WHERE id = #{id}
     </select>
 </mapper>

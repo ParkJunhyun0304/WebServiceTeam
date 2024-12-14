@@ -37,7 +37,7 @@ public class QuarantineVO {
     /**
      * 생일
      */
-    private Date birthDate;
+    private String birthDate;
     /**
      * 성별 (0 : 남자 / 1: 여자)
      */
@@ -59,6 +59,10 @@ public class QuarantineVO {
      */
     private String flightCode;
     /**
+     * 좌석번호
+     */
+    private String flightSeat;
+    /**
      * 연락처
      */
     private String contact;
@@ -79,7 +83,35 @@ public class QuarantineVO {
      */
     private String uuidFileName;
     /**
-     * 증상 유무 (boolean)
+     * 출발국가
      */
-    private boolean isHealthy;
+    private String departure;
+    /**
+     * 승인여부
+     */
+    private int approved;
+    /**
+     * 증상 유무 (int)
+     * 0 : 증상없음 1 : 증상있음
+     */
+    private int isHealthy;
+
+    public QuarantineVO(int symptomsId, String birthDate, int gender, String name, String passportId, String nationality, String flightCode, String flightSeat, String contact, String note, String visitCountry, String originalImgName,String uuidFileName, String departure, int isHealthy, int approved) {
+        this.symptomsId = symptomsId;
+        this.birthDate = birthDate;
+        this.name = name;
+        this.gender = gender;
+        this.note = note;
+        this.passportId = passportId;
+        this.nationality = nationality;
+        this.flightCode = flightCode;
+        this.flightSeat = flightSeat;
+        this.contact = contact;
+        this.visitCountry = visitCountry;
+        this.originalFileName = originalImgName;
+        this.uuidFileName = uuidFileName;
+        this.departure = departure;
+        this.isHealthy = isHealthy;
+        this.approved = approved;
+    }
 }

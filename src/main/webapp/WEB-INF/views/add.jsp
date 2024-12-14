@@ -24,7 +24,7 @@
         </div>
 
         <div class="formWrapper">
-            <form id="quarantineForm" method="post" action="addPassenger">
+            <form id="quarantineForm" method="post" action="addPassenger" enctype="multipart/form-data">
                 <table>
                     <tbody>
                     <tr>
@@ -44,8 +44,8 @@
                                 <label class="formLabel">성별</label>
                                 <div class="radioGroup">
                                     <div class="radioButtons">
-                                        <input type="radio" name="gender" value="1"> 남성
-                                        <input type="radio" name="gender" value="2"> 여성
+                                        <input type="radio" name="gender" value="0"> 남성
+                                        <input type="radio" name="gender" value="1"> 여성
                                     </div>
                                     <c:if test="${errors.gender != null}">
                                         <div class="invalidFeedback">${errors.gender}</div>
@@ -87,7 +87,7 @@
                             <div class="inlineFormGroup">
                                 <label class="formLabel">생년월일</label>
                                 <div class="controlWrapper">
-                                    <input name="birthdate" type="date" class="formControl w-100" value="">
+                                    <input name="birthDate" type="date" class="formControl w-100" value="">
                                     <c:if test="${errors.birthdate != null}">
                                         <div class="invalidFeedback">${errors.birthdate}</div>
                                     </c:if>
@@ -186,7 +186,7 @@
 
                 <div class="formHeader third">건강상태 정보
                     <div class="formHeaderButton">
-                        <input type="checkbox" id="isHealthy" name="isHealthy" value="true" checked> 증상 없음
+                        <input type="checkbox" id="isHealthy" name="isHealthy" value="0" checked> 증상 없음
                     </div>
                 </div>
                 <fieldset class="fieldset">
@@ -201,52 +201,52 @@
                                 <tbody>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="fever"> 발열
+                                        <input type="checkbox" class="symptom-checkbox" name="fever" value="0"> 발열
                                     </td>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="chill" > 오한
+                                        <input type="checkbox" class="symptom-checkbox" name="chill" value="0"> 오한
                                     </td>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="headache" > 두통
+                                        <input type="checkbox" class="symptom-checkbox" name="headache" value="0"> 두통
                                     </td>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="sore_throat" > 인후통
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="runny_nose" > 콧물
-                                    </td>
-                                    <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="cough" > 기침
-                                    </td>
-                                    <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="short_breath" > 호흡곤란
-                                    </td>
-                                    <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="colic_diarrhea" > 복통/설사
+                                        <input type="checkbox" class="symptom-checkbox" name="sore_throat" value="0"> 인후통
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="vomit" > 구토
+                                        <input type="checkbox" class="symptom-checkbox" name="runny_nose" value="0"> 콧물
                                     </td>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="rash" > 발진
+                                        <input type="checkbox" class="symptom-checkbox" name="cough" value="0"> 기침
                                     </td>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="jaundice" > 황달
+                                        <input type="checkbox" class="symptom-checkbox" name="short_breath" value="0"> 호흡곤란
                                     </td>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="loss_consciousness" > 의식 저하
+                                        <input type="checkbox" class="symptom-checkbox" name="colic_diarrhea" value="0"> 복통/설사
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="bloody_mucus"> 점막 지속 출혈
+                                        <input type="checkbox" class="symptom-checkbox" name="vomit" value="0"> 구토
+                                    </td>
+                                    <td class="">
+                                        <input type="checkbox" class="symptom-checkbox" name="rash" value="0"> 발진
+                                    </td>
+                                    <td class="">
+                                        <input type="checkbox" class="symptom-checkbox" name="jaundice" value="0"> 황달
+                                    </td>
+                                    <td class="">
+                                        <input type="checkbox" class="symptom-checkbox" name="loss_consciousness" value="0"> 의식 저하
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <input type="checkbox" class="symptom-checkbox" name="bloody_mucus" value="0"> 점막 지속 출혈
                                     </td>
                                     <td colspan="3" class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="other"> 기타
+                                        <input type="checkbox" class="symptom-checkbox" name="other" value="0"> 기타
                                         <input type="text" name="other_detail" class="formControl" value="">
                                     </td>
                                 </tr>
@@ -264,17 +264,17 @@
                                 <tbody>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="take_medicine"> 증상 관련 약 복용
+                                        <input type="checkbox" class="symptom-checkbox" name="take_medicine" value="0"> 증상 관련 약 복용
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="visit_hospital"> 현지 병원 방문
+                                        <input type="checkbox" class="symptom-checkbox" name="visit_hospital" value="0"> 현지 병원 방문
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="">
-                                        <input type="checkbox" class="symptom-checkbox" name="animal_contact"> 동물 접촉
+                                        <input type="checkbox" class="symptom-checkbox" name="animal_contact" value="0"> 동물 접촉
                                     </td>
                                 </tr>
                                 </tbody>
@@ -289,19 +289,18 @@
                         </div>
                     </div>
                 </fieldset>
+                <div class="container">
+                    <div class="formHeader first">
+                        첨부파일 업로드
+                    </div>
+                    <div class="formWrapper ">
+                        <input type="file" name="file" class="formControl"/>
+                    </div>
+                    <button id="submitButton" type="submit" class="submitButton" form="quarantineForm">제출</button>
+                </div>
             </form>
         </div>
     </div>
-    <div class="container">
-        <div class="formHeader first">
-            첨부파일 업로드
-        </div>
-        <div class="formWrapper ">
-            <input type="file" name="file" class="formControl"/>
-        </div>
-        <button id="submitButton" type="submit" class="submitButton" form="quarantineForm">제출</button>
-    </div>
-
 </div>
 
 </body>
@@ -311,9 +310,15 @@
         const isHealthyCheckbox = document.getElementById("isHealthy");
 
         symptomCheckboxes.forEach((checkbox) => {
+            checkbox.value = "0";
+
             checkbox.addEventListener("change", function () {
                 if (this.checked) {
+                    this.value = "1";
                     isHealthyCheckbox.checked = false;
+                    isHealthyCheckbox.value = "1";
+                } else {
+                    this.value = "0";
                 }
                 checkAll();
                 updateStyle(checkbox);
@@ -324,18 +329,9 @@
             const allUnchecked = Array.from(symptomCheckboxes).every((checkbox) => !checkbox.checked);
             if (allUnchecked) {
                 isHealthyCheckbox.checked = true;
+                isHealthyCheckbox.value = "0"
             }
         }
-
-
-        symptomCheckboxes.forEach((checkbox) => {
-            checkbox.addEventListener("change", function () {
-                if (this.checked) {
-                    isHealthyCheckbox.checked = false;
-                }
-                updateStyle(checkbox);
-            });
-        });
 
         function updateStyle(checkbox) {
             if (checkbox.checked) {

@@ -18,9 +18,21 @@
             <div class="SearchTitile">고급 검색</div>
             <div class="SearchInputDiv">
                 <form method="get" action="<c:url value='/list'/>" style="display:flex;align-items:center;">
-                    <input class="SearchInput" type="text" placeholder="이름으로 검색" name="nameSearch" value="${nameSearch}"/>
-                    <input class="SearchInput" type="text" placeholder="항공편명으로 검색" name="codeSearch" value="${codeSearch}"/>
-                    <input class="SearchInput" type="text" placeholder="출발지로 검색" name="depSearch" value="${depSearch}"/>
+                    <!-- 만약 사용자가 검색을 했으면 검색란에 사용자가 검색한 값 남겨놓고, 아니면 검색어 입력을 두기, null 일때를 체크해서 에러 없애기 -->
+                    <input type="text" id="searchInput" class="SearchInput" name="nameSearch"
+                           value="<%= (request.getParameter("nameSearch") != null &&
+                       !request.getParameter("nameSearch").isEmpty()) ? request.getParameter("nameSearch") : ""%>"
+                           placeholder="이름으로 검색" onkeyup="checkEnter(event)">
+
+                    <input type="text" id="codeSearch" class="SearchInput" name="codeSearch"
+                           value="<%= (request.getParameter("codeSearch") != null &&
+                       !request.getParameter("codeSearch").isEmpty()) ? request.getParameter("codeSearch") : ""%>"
+                           placeholder="항공편명으로 검색" onkeyup="checkEnter(event)">
+
+                    <input type="text" id="depSearch" class="SearchInput" name="depSearch"
+                           value="<%= (request.getParameter("depSearch") != null &&
+                       !request.getParameter("depSearch").isEmpty()) ? request.getParameter("depSearch") : ""%>"
+                           placeholder="출발지로 검색" onkeyup="checkEnter(event)">
                     <button type="submit" style="border-radius:10px;margin-right:5px;">
                         <img src="<c:url value='/image/search.png'/>" alt="search" width="20"/>
                     </button>
@@ -61,17 +73,17 @@
                 </c:when>
                 <c:otherwise>
                     <c:forEach var="data" items="${currentUsers}" varStatus="status">
-                        <c:set var="symptom" value="${data.symptom}" />
+                        <c:set var="symptom" value="${data.isHealthy}" />
                         <tr>
                             <td>${(currentPage - 1)*10 + status.index + 1}</td>
                             <td>
-                                <c:if test="${symptom != null and fn:length(symptom) > 0}">
+                                <c:if test="${symptom != null and symptom == 1}">
                                     의심
                                 </c:if>
                             </td>
                             <td>${data.name}</td>
                             <td>${data.gender}</td>
-                            <td>${data.birthdate}</td>
+                            <td>${data.birthDate}</td>
                             <td>${data.flightCode}</td>
                             <td>${data.departure}</td>
                             <td>${data.contact}</td>
@@ -112,5 +124,12 @@
         </div>
     </div>
 </div>
+<script>
+    function checkEnter(event) {
+        if (event.key === 'Enter') {
+            filterBoards();
+        }
+    }
+</script>
 </body>
 </html>
